@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MetaLens.AI - Investor Presentation</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Slide 1: Title Slide -->
+    <div class="slide-container active" id="slide1">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="z-10 p-4 flex justify-end h-full items-center">
+                <div class="logo-container">
+                    <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <div class="accent-bar mb-6"></div>
+            <h1 class="text-6xl mb-4 text-white">MetaLens<span class="text-blue-300">.AI</span></h1>
+            <h2 class="text-3xl mb-8 font-light text-blue-200">AI-Powered Document & Image Analysis Platform</h2>
+            <p class="text-xl mb-10 max-w-2xl text-gray-200">
+                Revolutionizing document verification and fraud detection through advanced machine learning and computer vision technologies.
+            </p>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">Designed & Developed by Prateek Dutta</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Executive Summary -->
+    <div class="slide-container" id="slide2">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Executive Summary</h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <p class="text-xl mb-8 max-w-4xl text-gray-200">
+                MetaLens.AI delivers cutting-edge AI document verification and fraud detection with advanced machine learning and computer vision technologies.
+            </p>
+            <div class="grid grid-cols-3 gap-6 mt-4">
+                <!-- Value Prop 1 -->
+                <div class="value-prop-card p-5 flex items-start">
+                    <div class="icon-circle mr-4">
+                        <i class="fas fa-bullseye fa-2x text-blue-300"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-300">99.7%</h3>
+                        <p class="text-gray-200">Accuracy in fraud detection</p>
+                    </div>
+                </div>
+                <!-- Value Prop 2 -->
+                <div class="value-prop-card p-5 flex items-start">
+                    <div class="icon-circle mr-4">
+                        <i class="fas fa-coins fa-2x text-blue-300"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-300">90%</h3>
+                        <p class="text-gray-200">Cost reduction vs manual processes</p>
+                    </div>
+                </div>
+                <!-- Value Prop 3 -->
+                <div class="value-prop-card p-5 flex items-start">
+                    <div class="icon-circle mr-4">
+                        <i class="fas fa-clock fa-2x text-blue-300"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-300">24/7</h3>
+                        <p class="text-gray-200">Automated processing with instant results</p>
+                    </div>
+                </div>
+                <!-- Value Prop 4 -->
+                <div class="value-prop-card p-5 flex items-start">
+                    <div class="icon-circle mr-4">
+                        <i class="fas fa-cogs fa-2x text-blue-300"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Customizable</h3>
+                        <p class="text-gray-200">For any industry requirement</p>
+                    </div>
+                </div>
+                <!-- Value Prop 5 -->
+                <div class="value-prop-card p-5 flex items-start">
+                    <div class="icon-circle mr-4">
+                        <i class="fas fa-headset fa-2x text-blue-300"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-300">36-48h</h3>
+                        <p class="text-gray-200">Resolution guarantee for support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: The Document Fraud Crisis -->
+    <div class="slide-container" id="slide3">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">The Document Fraud Crisis <i class="fas fa-exclamation-triangle warning-icon ml-3"></i></h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <div class="mb-8">
+                <p class="text-xl text-gray-200 mb-4">The growing global challenge affecting businesses across industries</p>
+            </div>
+            <!-- Market Pain Points -->
+            <div class="grid grid-cols-3 gap-6 mb-6">
+                <div class="stat-card p-5">
+                    <h3 class="text-2xl font-semibold text-red-300">INR 265,600 Cr</h3>
+                    <p class="text-gray-200">lost annually to document fraud globally</p>
+                </div>
+                <div class="stat-card p-5">
+                    <h3 class="text-2xl font-semibold text-red-300">67% Increase</h3>
+                    <p class="text-gray-200">in fraud cases post-COVID-19</p>
+                </div>
+                <div class="stat-card p-5">
+                    <h3 class="text-2xl font-semibold text-red-300">5-15 Minutes</h3>
+                    <p class="text-gray-200">per document for manual verification</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6 mb-4">
+                <div class="stat-card p-5">
+                    <h3 class="text-2xl font-semibold text-red-300">15-20%</h3>
+                    <p class="text-gray-200">human error rate in document verification</p>
+                </div>
+                <div class="stat-card p-5">
+                    <h3 class="text-2xl font-semibold text-red-300">High Costs</h3>
+                    <p class="text-gray-200">for fraud detection teams and operations</p>
+                </div>
+            </div>
+            <!-- Industry-Specific Challenges -->
+            <h3 class="text-xl font-semibold text-blue-300 mt-8 mb-3">Industry-Specific Challenges</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="industry-card p-4">
+                    <h4 class="font-bold text-white"><i class="fas fa-landmark mr-2 text-blue-300"></i> Banking & Financial</h4>
+                    <ul class="text-gray-200 ml-6 mt-1 list-disc">
+                        <li>Loan application fraud detection</li>
+                        <li>Identity verification for KYC compliance</li>
+                        <li>Check and document forgery detection</li>
+                    </ul>
+                </div>
+                <div class="industry-card p-4">
+                    <h4 class="font-bold text-white"><i class="fas fa-file-medical mr-2 text-blue-300"></i> Insurance</h4>
+                    <ul class="text-gray-200 ml-6 mt-1 list-disc">
+                        <li>Claims document verification</li>
+                        <li>Policy fraud detection</li>
+                        <li>Medical report authenticity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Industry Use Cases -->
+    <div class="slide-container" id="slide4">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Industry Use Cases</h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <p class="text-xl mb-6 max-w-4xl text-gray-200">
+                MetaLens.AI addresses critical document verification challenges across multiple industries
+            </p>
+            <div class="grid grid-cols-2 gap-8 mt-4">
+                <!-- Banking Section -->
+                <div class="value-prop-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-university fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Banking & Financial Services</h3>
+                    </div>
+                    <div class="pl-4">
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Loan application fraud detection</p>
+                        </div>
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Identity verification for KYC compliance</p>
+                        </div>
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Check and document forgery detection</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Insurance Section -->
+                <div class="value-prop-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-file-medical fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Insurance</h3>
+                    </div>
+                    <div class="pl-4">
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Claims document verification</p>
+                        </div>
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Policy fraud detection</p>
+                        </div>
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Medical report authenticity</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Legal Section -->
+                <div class="value-prop-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-balance-scale fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Legal & Corporate</h3>
+                    </div>
+                    <div class="pl-4">
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Contract document analysis</p>
+                        </div>
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Signature verification</p>
+                        </div>
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Legal document authenticity</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Government Section -->
+                <div class="value-prop-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-landmark fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Government & Public Sector</h3>
+                    </div>
+                    <div class="pl-4">
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Identity document verification</p>
+                        </div>
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Passport and license validation</p>
+                        </div>
+                        <div class="use-case-item">
+                            <span class="bullet-point">•</span>
+                            <p class="text-gray-200">Public record authentication</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: MetaLens.AI Platform -->
+    <div class="slide-container" id="slide5">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">MetaLens.AI: Our AI-Powered Platform</h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <p class="text-xl mb-8 max-w-4xl text-gray-200">
+                Our cutting-edge platform combines multiple AI technologies to deliver comprehensive document verification and fraud detection capabilities.
+            </p>
+            <div class="grid grid-cols-3 gap-6 mt-4">
+                <!-- Capability 1 -->
+                <div class="capability-card p-5">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-signature fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Signature Analysis</h3>
+                    </div>
+                    <p class="text-gray-200">ML-based algorithms for detecting forged signatures with 99.7% accuracy. Identifies anomalies in pressure points, stroke patterns, and consistency.</p>
+                </div>
+                <!-- Capability 2 -->
+                <div class="capability-card p-5">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-file-alt fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Document Verification</h3>
+                    </div>
+                    <p class="text-gray-200">Comprehensive metadata and layout analysis to verify document authenticity, including watermark detection and template matching.</p>
+                </div>
+                <!-- Capability 3 -->
+                <div class="capability-card p-5">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-language fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">OCR & Text Extraction</h3>
+                    </div>
+                    <p class="text-gray-200">Multi-language text processing with advanced recognition capabilities for structured and unstructured documents across 42+ languages.</p>
+                </div>
+                <!-- Capability 4 -->
+                <div class="capability-card p-5">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-image fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Image Analysis</h3>
+                    </div>
+                    <p class="text-gray-200">Deepfake and manipulation detection using state-of-the-art computer vision to identify altered photos and fabricated images.</p>
+                </div>
+                <!-- Capability 5 -->
+                <div class="capability-card p-5">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-clone fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Comparison Analysis</h3>
+                    </div>
+                    <p class="text-gray-200">Document similarity assessment using AI pattern matching to identify related documents or detect inconsistencies between versions.</p>
+                </div>
+                <!-- Capability 6 -->
+                <div class="capability-card p-5">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-shield-alt fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Comprehensive Suite</h3>
+                    </div>
+                    <p class="text-gray-200">All-in-one verification solution with integrated workflow, customizable rulesets, and detailed audit trails for compliance.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: Tech Stack -->
+    <div class="slide-container" id="slide6">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Tech Stack & Integration</h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <p class="text-xl mb-8 max-w-4xl text-gray-200">
+                Our comprehensive technical infrastructure delivers enterprise-grade document verification with cutting-edge AI capabilities.
+            </p>
+            <div class="grid grid-cols-3 gap-6 mt-4">
+                <!-- Tech 1 -->
+                <div class="tech-card p-5 flex items-start">
+                    <div class="icon-circle mr-4">
+                        <i class="fas fa-eye fa-2x text-blue-300"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Multi-Engine OCR</h3>
+                        <p class="text-gray-200">Tesseract, EasyOCR, PaddleOCR for highest accuracy text extraction</p>
+                    </div>
+                </div>
+                <!-- Tech 2 -->
+                <div class="tech-card p-5 flex items-start">
+                    <div class="icon-circle mr-4">
+                        <i class="fas fa-brain fa-2x text-blue-300"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Advanced ML Models</h3>
+                        <p class="text-gray-200">VGG16, CNN, LSTM for sophisticated pattern recognition</p>
+                    </div>
+                </div>
+                <!-- Tech 3 -->
+                <div class="tech-card p-5 flex items-start">
+                    <div class="icon-circle mr-4">
+                        <i class="fas fa-bolt fa-2x text-blue-300"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Real-time Processing</h3>
+                        <p class="text-gray-200">Instant verification results with minimal latency</p>
+                    </div>
+                </div>
+                <!-- Tech 4 -->
+                <div class="tech-card p-5 flex items-start">
+                    <div class="icon-circle mr-4">
+                        <i class="fas fa-cloud fa-2x text-blue-300"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Flexible Deployment</h3>
+                        <p class="text-gray-200">Cloud & on-premise options to meet security requirements</p>
+                    </div>
+                </div>
+                <!-- Tech 5 -->
+                <div class="tech-card p-5 flex items-start">
+                    <div class="icon-circle mr-4">
+                        <i class="fas fa-code fa-2x text-blue-300"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-300">API-First Architecture</h3>
+                        <p class="text-gray-200">Seamless integration with existing business systems</p>
+                    </div>
+                </div>
+                <!-- Tech 6 -->
+                <div class="tech-card p-5 flex items-start">
+                    <div class="icon-circle mr-4">
+                        <i class="fas fa-shield-alt fa-2x text-blue-300"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Enterprise Security</h3>
+                        <p class="text-gray-200">Bank-grade encryption and compliance standards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Market Opportunity -->
+    <div class="slide-container" id="slide7">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Market Opportunity & Growth</h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <div class="flex flex-col">
+                <!-- Top section: Market Growth Chart -->
+                <div class="flex-1">
+                    <div class="flex">
+                        <div class="w-1/2 pr-8">
+                            <div class="chart-container">
+                                <canvas id="marketGrowthChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="w-1/2 flex flex-col justify-center">
+                            <div class="grid grid-cols-2 gap-4">
+                                <!-- CAGR -->
+                                <div class="stat-card p-4">
+                                    <h3 class="text-xl text-gray-300 mb-1">Annual Growth</h3>
+                                    <p class="text-3xl font-bold text-blue-300">17.2% <span class="text-lg text-white">CAGR</span></p>
+                                </div>
+                                <!-- Total Market Size -->
+                                <div class="stat-card p-4">
+                                    <h3 class="text-xl text-gray-300 mb-1">2030 Market Size</h3>
+                                    <p class="text-3xl font-bold text-blue-300">INR 106,240 Cr</p>
+                                </div>
+                                <!-- TAM -->
+                                <div class="stat-card p-4">
+                                    <h3 class="text-xl text-gray-300 mb-1">Total Addressable Market</h3>
+                                    <p class="text-3xl font-bold text-blue-300">INR 17,430 Cr</p>
+                                </div>
+                                <!-- SAM -->
+                                <div class="stat-card p-4">
+                                    <h3 class="text-xl text-gray-300 mb-1">Serviceable Market</h3>
+                                    <p class="text-3xl font-bold text-blue-300">INR 3,486 Cr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom section: Industry Breakdown -->
+                <div class="mt-8">
+                    <h2 class="text-2xl font-semibold text-white mb-4">Target Industry Breakdown</h2>
+                    <div class="w-full">
+                        <div class="flex items-center mb-3">
+                            <div class="w-1/5 text-gray-300">Banking & Financial</div>
+                            <div class="w-3/5">
+                                <div class="industry-bar bg-blue-500" style="width: 80%"></div>
+                            </div>
+                            <div class="w-1/5 pl-4 text-xl font-semibold">INR 9,960 Cr</div>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <div class="w-1/5 text-gray-300">Insurance</div>
+                            <div class="w-3/5">
+                                <div class="industry-bar bg-purple-500" style="width: 65%"></div>
+                            </div>
+                            <div class="w-1/5 pl-4 text-xl font-semibold">INR 6,640 Cr</div>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <div class="w-1/5 text-gray-300">Legal & Corporate</div>
+                            <div class="w-3/5">
+                                <div class="industry-bar bg-indigo-500" style="width: 50%"></div>
+                            </div>
+                            <div class="w-1/5 pl-4 text-xl font-semibold">INR 4,980 Cr</div>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <div class="w-1/5 text-gray-300">Government</div>
+                            <div class="w-3/5">
+                                <div class="industry-bar bg-teal-500" style="width: 35%"></div>
+                            </div>
+                            <div class="w-1/5 pl-4 text-xl font-semibold">INR 3,320 Cr</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/5 text-gray-300">Healthcare</div>
+                            <div class="w-3/5">
+                                <div class="industry-bar bg-cyan-500" style="width: 25%"></div>
+                            </div>
+                            <div class="w-1/5 pl-4 text-xl font-semibold">INR 2,490 Cr</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8: Business Model -->
+    <div class="slide-container" id="slide8">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Business Model & Revenue Streams</h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <p class="text-xl mb-6 max-w-4xl text-gray-200">
+                Multiple flexible revenue models to accommodate various customer needs with a transparent, value-based pricing strategy.
+            </p>
+            <div class="grid grid-cols-2 gap-6 max-h-full overflow-y-auto">
+                <!-- Revenue Models Column -->
+                <div>
+                    <h2 class="section-heading text-2xl mb-4">REVENUE MODELS</h2>
+                    <div class="space-y-3">
+                        <!-- Revenue Model 1 -->
+                        <div class="revenue-card p-4 flex items-start">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-cloud fa-lg text-blue-300"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-blue-300">SaaS Subscription</h3>
+                                <p class="text-gray-200">Monthly/Annual plans with tiered pricing</p>
+                            </div>
+                        </div>
+                        <!-- Revenue Model 2 -->
+                        <div class="revenue-card p-4 flex items-start">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-file-invoice fa-lg text-blue-300"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-blue-300">Per-Transaction</h3>
+                                <p class="text-gray-200">Pay-per-analysis flexibility</p>
+                            </div>
+                        </div>
+                        <!-- Revenue Model 3 -->
+                        <div class="revenue-card p-4 flex items-start">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-building fa-lg text-blue-300"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-blue-300">Enterprise Licensing</h3>
+                                <p class="text-gray-200">Custom solutions for large organizations</p>
+                            </div>
+                        </div>
+                        <!-- Revenue Model 4 -->
+                        <div class="revenue-card p-4 flex items-start">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-code fa-lg text-blue-300"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-blue-300">API Usage</h3>
+                                <p class="text-gray-200">Developer integration fees</p>
+                            </div>
+                        </div>
+                        <!-- Revenue Model 5 -->
+                        <div class="revenue-card p-4 flex items-start">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-hands-helping fa-lg text-blue-300"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-blue-300">Professional Services</h3>
+                                <p class="text-gray-200">Implementation & training</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pricing Strategy Column -->
+                <div>
+                    <h2 class="section-heading text-2xl mb-4">PRICING STRATEGY</h2>
+                    <div class="space-y-3">
+                        <!-- Starter Plan -->
+                        <div class="pricing-card p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold text-white">Starter Plan</h3>
+                                <span class="text-2xl font-bold text-blue-300">INR 899</span>
+                            </div>
+                            <p class="text-sm text-gray-300">Monthly | 1,000 analyses</p>
+                            <div class="mt-2 pl-2 border-l-2 border-blue-300">
+                                <p class="text-gray-200">Perfect for small businesses</p>
+                            </div>
+                        </div>
+                        <!-- Professional Plan -->
+                        <div class="pricing-card p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold text-white">Professional Plan</h3>
+                                <span class="text-2xl font-bold text-blue-300">INR 2,499</span>
+                            </div>
+                            <p class="text-sm text-gray-300">3 months | 10,000 analyses</p>
+                            <div class="mt-2 pl-2 border-l-2 border-blue-300">
+                                <p class="text-gray-200">Ideal for growing businesses</p>
+                            </div>
+                        </div>
+                        <!-- Enterprise Plan -->
+                        <div class="pricing-card p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold text-white">Enterprise Plan</h3>
+                                <span class="text-2xl font-bold text-blue-300">INR 80,000</span>
+                            </div>
+                            <p class="text-sm text-gray-300">Yearly | Unlimited analyses + customization</p>
+                            <div class="mt-2 pl-2 border-l-2 border-blue-300">
+                                <p class="text-gray-200">Full-scale organizational solution</p>
+                            </div>
+                        </div>
+                        <!-- Custom Solution -->
+                        <div class="pricing-card p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold text-white">Custom Solution</h3>
+                                <span class="text-2xl font-bold text-blue-300">INR 1,20,000</span>
+                            </div>
+                            <p class="text-sm text-gray-300">One-time setup + Annual Maintenance Charge</p>
+                            <div class="mt-2 pl-2 border-l-2 border-blue-300">
+                                <p class="text-gray-200">Tailored enterprise implementation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 9: Financials -->
+    <div class="slide-container" id="slide9">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Financials & ROI</h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <div class="flex flex-col">
+                <!-- Top section: Financial Projections Chart & Table -->
+                <div class="flex-1">
+                    <div class="flex">
+                        <!-- Chart -->
+                        <div class="w-1/2 pr-4">
+                            <div class="chart-container">
+                                <canvas id="financialProjectionsChart"></canvas>
+                            </div>
+                        </div>
+                        <!-- Table -->
+                        <div class="w-1/2 pl-4">
+                            <div class="stat-card p-2 overflow-hidden">
+                                <table class="w-full text-white">
+                                    <thead>
+                                        <tr class="table-header">
+                                            <th class="table-cell text-left">Metric</th>
+                                            <th class="table-cell text-right">Year 1</th>
+                                            <th class="table-cell text-right">Year 2</th>
+                                            <th class="table-cell text-right">Year 3</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-row">
+                                            <td class="table-cell">Customers</td>
+                                            <td class="table-cell text-right font-semibold">50</td>
+                                            <td class="table-cell text-right font-semibold">200</td>
+                                            <td class="table-cell text-right font-semibold">500</td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <td class="table-cell">ARR</td>
+                                            <td class="table-cell text-right font-semibold text-blue-300">INR 9.96 Cr</td>
+                                            <td class="table-cell text-right font-semibold text-blue-300">INR 39.84 Cr</td>
+                                            <td class="table-cell text-right font-semibold text-blue-300">INR 99.6 Cr</td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <td class="table-cell">Gross Margin</td>
+                                            <td class="table-cell text-right font-semibold text-green-300">85%</td>
+                                            <td class="table-cell text-right font-semibold text-green-300">87%</td>
+                                            <td class="table-cell text-right font-semibold text-green-300">89%</td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <td class="table-cell">Net Revenue</td>
+                                            <td class="table-cell text-right font-semibold">INR 8.47 Cr</td>
+                                            <td class="table-cell text-right font-semibold">INR 34.66 Cr</td>
+                                            <td class="table-cell text-right font-semibold">INR 88.64 Cr</td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <td class="table-cell">EBITDA</td>
+                                            <td class="table-cell text-right font-semibold text-red-300">INR -1.66 Cr</td>
+                                            <td class="table-cell text-right font-semibold text-purple-300">INR 9.96 Cr</td>
+                                            <td class="table-cell text-right font-semibold text-purple-300">INR 29.05 Cr</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom section: Key Financial Drivers & ROI -->
+                <div class="mt-6">
+                    <div class="flex">
+                        <!-- Key Financial Drivers -->
+                        <div class="w-1/2 pr-4">
+                            <h2 class="text-2xl font-semibold text-white mb-3">Key Financial Drivers</h2>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="stat-card p-4">
+                                    <h3 class="text-lg text-gray-300 mb-1">Customer Acquisition Cost</h3>
+                                    <p class="text-2xl font-bold text-blue-300">INR 2,07,500</p>
+                                </div>
+                                <div class="stat-card p-4">
+                                    <h3 class="text-lg text-gray-300 mb-1">Customer Lifetime Value</h3>
+                                    <p class="text-2xl font-bold text-blue-300">INR 37,35,000</p>
+                                </div>
+                                <div class="stat-card p-4">
+                                    <h3 class="text-lg text-gray-300 mb-1">LTV/CAC Ratio</h3>
+                                    <p class="text-2xl font-bold text-green-300">18:1</p>
+                                </div>
+                                <div class="stat-card p-4">
+                                    <h3 class="text-lg text-gray-300 mb-1">Monthly Churn Rate</h3>
+                                    <p class="text-2xl font-bold text-blue-300">2.5%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ROI Calculation -->
+                        <div class="w-1/2 pl-4">
+                            <h2 class="text-2xl font-semibold text-white mb-3">ROI Calculation</h2>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="stat-card p-4">
+                                    <h3 class="text-lg text-gray-300 mb-1">Implementation Cost</h3>
+                                    <p class="text-2xl font-bold text-blue-300">INR 75,00,000</p>
+                                </div>
+                                <div class="stat-card p-4">
+                                    <h3 class="text-lg text-gray-300 mb-1">Annual Savings</h3>
+                                    <p class="text-2xl font-bold text-green-300">INR 99.6-190.9 Cr</p>
+                                </div>
+                                <div class="stat-card p-4">
+                                    <h3 class="text-lg text-gray-300 mb-1">Payback Period</h3>
+                                    <p class="text-2xl font-bold text-green-300">1-2 months</p>
+                                </div>
+                                <div class="stat-card p-4">
+                                    <h3 class="text-lg text-gray-300 mb-1">3-Year ROI</h3>
+                                    <p class="text-2xl font-bold text-green-300">1,400% - 2,700%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 10: Competitive Edge -->
+    <div class="slide-container" id="slide10">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Competitive Edge</h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <p class="text-xl mb-6 max-w-4xl text-gray-200">
+                MetaLens.AI offers unmatched competitive advantages through our unique value propositions:
+            </p>
+            <div class="grid grid-cols-2 gap-6 mt-2">
+                <!-- Advantage 1 -->
+                <div class="advantage-card p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-puzzle-piece fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Highly Customizable Platform</h3>
+                    </div>
+                    <div class="ml-2 mt-3">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">Modular Architecture - Add/remove features as needed</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">Industry-Specific Solutions - Tailored for each vertical</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">API-First Design - Easy integration with existing systems</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">White-label Options - Brand customization available</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Advantage 2 -->
+                <div class="advantage-card p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-coins fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Cost-Effective Solution</h3>
+                    </div>
+                    <div class="ml-2 mt-3">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">90% Cost Reduction vs manual processes</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">No Infrastructure Investment required</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">Scalable Pricing based on usage</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">ROI within 3 months for most clients</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Advantage 3 -->
+                <div class="advantage-card p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-headset fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Comprehensive Support</h3>
+                    </div>
+                    <div class="ml-2 mt-3">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">24/7 Technical Support - Round-the-clock assistance</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">36-48 Hour Resolution - Guaranteed response time</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">Annual Maintenance Charge (AMC) - Transparent pricing</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">Dedicated Account Manager for enterprise clients</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Advantage 4 -->
+                <div class="advantage-card p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="icon-circle mr-4">
+                            <i class="fas fa-shield-alt fa-2x text-blue-300"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-300">Advanced Technology Stack</h3>
+                    </div>
+                    <div class="ml-2 mt-3">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">Multi-Engine OCR - Highest accuracy rates</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">Real-time Processing - Instant results</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">Cloud & On-premise - Flexible deployment</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <p class="text-gray-200">Enterprise Security - Bank-grade encryption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 11: Go-to-Market Strategy -->
+    <div class="slide-container" id="slide11">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Go-to-Market Strategy & Team</h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <div class="grid grid-cols-2 gap-6">
+                <!-- Left Column: Go-to-Market Strategy -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-blue-300 mb-4">Market Expansion Strategy</h2>
+                    <div class="space-y-3">
+                        <!-- Phase 1 -->
+                        <div class="phase-card p-4">
+                            <div class="flex items-center mb-2">
+                                <div class="icon-circle mr-3">
+                                    <i class="fas fa-rocket text-blue-300 fa-lg"></i>
+                                </div>
+                                <h3 class="phase-header text-xl font-bold">Phase 1: Foundation (1-6 months)</h3>
+                            </div>
+                            <ul class="list-disc pl-16 text-gray-200">
+                                <li>Core platform completion</li>
+                                <li>10 enterprise pilots</li>
+                                <li>Key hires in sales & marketing</li>
+                                <li>System integrator partnerships</li>
+                            </ul>
+                        </div>
+                        <!-- Phase 2 -->
+                        <div class="phase-card p-4">
+                            <div class="flex items-center mb-2">
+                                <div class="icon-circle mr-3">
+                                    <i class="fas fa-chart-line text-blue-300 fa-lg"></i>
+                                </div>
+                                <h3 class="phase-header text-xl font-bold">Phase 2: Scale (7-18 months)</h3>
+                            </div>
+                            <ul class="list-disc pl-16 text-gray-200">
+                                <li>Expansion to 5 new verticals</li>
+                                <li>Build reseller network</li>
+                                <li>Enter 3 new international markets</li>
+                                <li>Advanced feature development</li>
+                            </ul>
+                        </div>
+                        <!-- Phase 3 -->
+                        <div class="phase-card p-4">
+                            <div class="flex items-center mb-2">
+                                <div class="icon-circle mr-3">
+                                    <i class="fas fa-globe text-blue-300 fa-lg"></i>
+                                </div>
+                                <h3 class="phase-header text-xl font-bold">Phase 3: Growth (19-36 months)</h3>
+                            </div>
+                            <ul class="list-disc pl-16 text-gray-200">
+                                <li>Secure top 3 market position</li>
+                                <li>IPO preparation & readiness</li>
+                                <li>Presence in 15+ countries</li>
+                                <li>Third-party integration ecosystem</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column: Team Structure -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-blue-300 mb-4">Leadership & Core Team</h2>
+                    <div class="team-card p-5 mb-4">
+                        <h3 class="text-xl font-bold text-white mb-3">Executive Leadership</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-brain text-blue-300 mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-medium text-white">Founder (×1)</p>
+                                    <p class="text-sm text-gray-300">R&D in AI/ML + Industry Experience</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-database text-blue-300 mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-medium text-white">Co-founder (×1)</p>
+                                    <p class="text-sm text-gray-300">Sr. Data Scientist/Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card p-5 mb-4">
+                        <h3 class="text-xl font-bold text-white mb-3">Business Team</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-chart-bar text-blue-300 mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-medium text-white">Sales (×2)</p>
+                                    <p class="text-sm text-gray-300">MBA + B2B SaaS Experience (1-2 yrs)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-bullhorn text-blue-300 mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-medium text-white">Marketing (×2)</p>
+                                    <p class="text-sm text-gray-300">MBA + Tech Marketing (1-2 yrs)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card p-5">
+                        <h3 class="text-xl font-bold text-white mb-3">Technical Team</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-cogs text-blue-300 mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-medium text-white">Lead Engineer (×1)</p>
+                                    <p class="text-sm text-gray-300">B.Tech + Product Management</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-code text-blue-300 mr-3 mt-1"></i>
+                                <div>
+                                    <p class="font-medium text-white">Engineers (×6)</p>
+                                    <p class="text-sm text-gray-300">1 Sr. + 5 Jr. Software Engineers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 12: Investment Requirements -->
+    <div class="slide-container" id="slide12">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Investment Requirements & Next Steps</h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <p class="text-xl mb-6 max-w-4xl text-gray-200">
+                Join us in revolutionizing document verification through AI. MetaLens.AI offers an exceptional investment opportunity with strong unit economics and a massive growing market.
+            </p>
+            <div class="grid grid-cols-2 gap-8 mt-4">
+                <!-- Left Column -->
+                <div class="space-y-6">
+                    <div class="value-prop-card p-6">
+                        <h3 class="text-2xl font-semibold text-blue-300 mb-4">Series A Funding</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-200">Investment Amount</span>
+                                <span class="font-bold text-white">INR 1 Cr</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-200">Equity Offered</span>
+                                <span class="font-bold text-white">20%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-200">Pre-money Valuation</span>
+                                <span class="font-bold text-white">INR 5 Cr</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-200">Min. Investment</span>
+                                <span class="font-bold text-white">INR 40,00,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="value-prop-card p-6">
+                        <h3 class="text-2xl font-semibold text-blue-300 mb-4">Use of Funds</h3>
+                        <!-- Product Development -->
+                        <div class="mb-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-200">Product Development</span>
+                                <span class="font-bold text-white">40% (INR 40,00,000)</span>
+                            </div>
+                            <div class="progress-bar bg-gray-700 mt-1">
+                                <div class="progress-bar bg-blue-500" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <!-- Sales & Marketing -->
+                        <div class="mb-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-200">Sales & Marketing</span>
+                                <span class="font-bold text-white">30% (INR 30,00,000)</span>
+                            </div>
+                            <div class="progress-bar bg-gray-700 mt-1">
+                                <div class="progress-bar bg-purple-500" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <!-- Team Expansion -->
+                        <div class="mb-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-200">Team Expansion</span>
+                                <span class="font-bold text-white">20% (INR 20,00,000)</span>
+                            </div>
+                            <div class="progress-bar bg-gray-700 mt-1">
+                                <div class="progress-bar bg-indigo-500" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        <!-- Operations & Infrastructure -->
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-200">Operations & Infrastructure</span>
+                                <span class="font-bold text-white">10% (INR 10,00,000)</span>
+                            </div>
+                            <div class="progress-bar bg-gray-700 mt-1">
+                                <div class="progress-bar bg-teal-500" style="width: 10%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column -->
+                <div class="space-y-6">
+                    <div class="value-prop-card p-6">
+                        <h3 class="text-2xl font-semibold text-blue-300 mb-4">Key Milestones</h3>
+                        <div class="flex items-start mb-4">
+                            <div class="icon-circle mr-4 flex-shrink-0">
+                                <i class="fas fa-calendar-check fa-lg text-blue-300"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium text-white">Month 6</h4>
+                                <p class="text-gray-200">50 paying customers</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="icon-circle mr-4 flex-shrink-0">
+                                <i class="fas fa-chart-line fa-lg text-blue-300"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium text-white">Month 12</h4>
+                                <p class="text-gray-200">INR 1 Cr ARR</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="icon-circle mr-4 flex-shrink-0">
+                                <i class="fas fa-rocket fa-lg text-blue-300"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium text-white">Month 18</h4>
+                                <p class="text-gray-200">INR 4 Cr ARR</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="icon-circle mr-4 flex-shrink-0">
+                                <i class="fas fa-hand-holding-usd fa-lg text-blue-300"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium text-white">Month 24</h4>
+                                <p class="text-gray-200">Series B readiness</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 13: Thank You -->
+    <div class="slide-container" id="slide13">
+        <div class="overlay"></div>
+        <!-- Header with logo -->
+        <div class="slide-header">
+            <div class="flex justify-between items-center h-full px-16">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">The Journey Continues</h1>
+                    <div class="accent-bar"></div>
+                </div>
+                <div class="z-10 p-4 flex justify-end">
+                    <div class="logo-container">
+                        <img src="MetaLens.AI.jpg" alt="MetaLens.AI Logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="slide-content z-10 px-16">
+            <div class="flex flex-col justify-center items-center text-center h-full">
+                <h1 class="text-2xl font-semibold mb-4 text-gray-200">In Appreciation of Your Time & Trust, Let's Create the Future with a journey Together Towards Success!</h1>
+                <h2 class="text-6xl font-bold text-blue-300 mb-8">Thank You</h2>
+                <div class="contact-info text-xl">
+                    <div class="mb-2">📧 prateekdutta2001@gmail.com</div>
+                    <div>📞 +91-7879362381</div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="slide-footer">
+            <div class="z-10 px-16 py-4 bg-opacity-30 bg-black flex justify-between items-center h-full">
+                <div>
+                    <p class="text-sm text-gray-300">MetaLens.AI | Investor Presentation</p>
+                </div>
+                <div class="navigation">
+                    <button class="nav-btn" onclick="changeSlide(-1)" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="slide-indicators" id="indicators"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)" id="nextBtn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">
+                        <span class="text-blue-300">AI-Powered Document & Image Analysis Platform</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
